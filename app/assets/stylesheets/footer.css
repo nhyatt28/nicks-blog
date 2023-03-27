@@ -1,0 +1,80 @@
+.outer-footer {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #101010;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    margin-top: auto;
+  }
+  
+  .inner-footer {
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: scroll;
+  }
+  
+  .icons li img {
+    width: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+    margin: 0 10px;
+    position: relative;
+    top: 20px;
+  }
+  
+  .last-icon img{
+    background-color: white;
+    border-radius: 30px;
+  }
+  
+  .footer-nav {
+    float: left;
+    height: 100%;
+  }
+  
+  .footer-nav a {
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 0px 20px; 
+    position: relative;
+    top: 25px;
+  }
+  
+  .footer-nav a:first-child {
+    padding-left: 0;
+  }
+  
+  .footer-nav a li {
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+  }
+  
+  .footer-nav a li:hover {
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    color: green;
+    font-family: 'Montserrat';
+    font-size: 16px;
+  }

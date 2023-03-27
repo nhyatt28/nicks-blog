@@ -1,0 +1,23 @@
+.resume {
+    height: 100%;
+    margin: 10px 20px 80px 20px;
+    position: relative;
+    top: 0;
+    bottom: 80px;
+  }
+  
+  span.underline  {
+    text-decoration: underline;
+  }
+  
+  span.italic {
+    font-style: italic;
+  }
+  
+  .sm-font {
+    font-size: 14px;
+  }
+  
+  .list-bullet li {
+    list-style: inside;
+  }
