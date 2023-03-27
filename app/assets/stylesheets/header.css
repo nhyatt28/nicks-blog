@@ -37,10 +37,12 @@
   
   .nav {
     float: right;
+    display: table;
   }
   
   .nav a {
-    display: table;
+    display: table-cell;
+    vertical-align: middle;
     float: left;
     padding: 0px 20px; 
   }
