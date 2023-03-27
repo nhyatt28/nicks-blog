@@ -36,13 +36,14 @@
   }
   
   .nav {
+    height: 100%;
     float: right;
     display: table;
   }
   
   .nav a {
-    display: table-cell;
-    vertical-align: middle;
+    display: table;
+    height: 100%;
     float: left;
     padding: 0px 20px; 
   }
