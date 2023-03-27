@@ -10,9 +10,6 @@ class PagesController < ApplicationController
 
     def resume
     end
-    
-    def header
-    end
 
     def contact
     end
