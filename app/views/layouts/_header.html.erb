@@ -1,8 +1,37 @@
 <header>
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+<script defer src="./javascript/dropdown.js"></script>
+  <div class='contact-container'>
+    <div class='contact-inner'>
+      <ul class='contact-list'>
+        <a href="mailto:nickhyatt99@gmail.com"><li>nickhyatt99@gmail.com</li></a>
+        <a href="tel:7203781880"><li>(720) 378 - 1880</li></a>
+      </ul>
+    </div>
+
+  </div>
     <div class="outer-header">
         <div class='inner-header'>
           <div class='logo-container'>
-              <h1>Nick<span>Hyatt</span></h1>
+              <a href='/'><h1>Nick<span> Hyatt</span></h1></a>
           </div>
             <ul class='nav'>
               <a href="/"><li>Home</li></a>
@@ -10,6 +39,18 @@
               <a href="/portfolio"><li>Portfolio</li></a>
               <a href="/resume"><li>Resume</li></a>
               <a href="/contact"><li>Contact</li></a>
+              <li>
+                <div class='table-align'>
+                  <div class='dropdown'>
+                    <button onclick="myFunction()" class="dropbtn">More</button>
+                    <img src="https://i.postimg.cc/kGfbY5df/icons8-down-25.png">
+                    <div id="myDropdown" class='dropdown-content'>
+                      <a href="/messages">Community Chat</a>
+                      <a href="/chess">Play Chess</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
         </div>
     </div>

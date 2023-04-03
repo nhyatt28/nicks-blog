@@ -8,5 +8,10 @@ Rails.application.routes.draw do
   get '/portfolio' => 'pages#portfolio'
   get '/resume' => 'pages#resume'
   get '/contact' => 'pages#contact'
+  
+  get '/messages' => 'messages#index'
+  get '/messages/new' => 'messages#new'
+
+  post 'messages' => 'messages#create' 
 end
 
