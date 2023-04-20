@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MessengerApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script type="text/javascript" src="communication.js"></script>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <title>NicksBlog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "dropdown" %>
+    <%= javascript_include_tag "burger-menu" %> 
+   <!-- <%= javascript_include_tag "invoca" %> -->
+  </head>
 
-<%= render '/layouts/header' %>
-
-<%= yield %>
-
-</body>
+    <body>
+        <%= render '/layouts/header' %>
+        <%= yield %>
+    </body>
+    
 </html>
